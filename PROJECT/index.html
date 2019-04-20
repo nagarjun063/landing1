@@ -26,8 +26,7 @@
                                       dark
                                       icons-and-text
                                     >
-                                      <v-tabs-slider color="green"></v-tabs-slider>
-                                  
+                                    <v-tabs-slider color="green"></v-tabs-slider>
                                       <v-tab href="#tab-1">
                                       LOANS
                                         
@@ -57,9 +56,12 @@
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <v-btn flat>
                                     rainbow heroes
+                                    <v-flex xs12 sm3 >
                                     <v-badge top color="green">
-                                        <span slot="badge"></span>
+                                        <span xs12 sm8 md4 slot="badge"></span>
+                                        
                                     </v-badge>
+                                  </v-flex>
                                     </v-btn>
                                     <v-divider vertical></v-divider>
                                             <v-btn flat icon color="white">
@@ -74,7 +76,7 @@
                                         <v-icon>crop_16_9</v-icon>
                                     </v-btn>
                                     <v-divider vertical></v-divider>
-                                    <v-btn  small color="green">Sign in</v-btn>
+                                    <v-btn  xs color="green">Sign in</v-btn>
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                   </v-toolbar-items>
                                 </v-toolbar>
@@ -83,9 +85,32 @@
                 <v-flex xs12 sm8 md4>
                   <v-card color="rgb(15, 1, 35)"class="elevation-12" class="white--text">
                     <v-toolbar dark color="rgb(15, 1, 35)">
-                      <v-toolbar-title><b>LOAN</b><t></t></v-toolbar-title><v-toolbar-title>CC </v-toolbar-title><v-toolbar-title>INSURANCE </v-toolbar-title>
-                  <v-spacer></v-spacer>
-                 
+                        <v-tabs
+                                      color="rgb(15, 1, 35)"
+                                      dark
+                                      icons-and-text
+                                    >
+                                    <v-tabs-slider color="green"></v-tabs-slider>
+                                      <v-tab href="#tab-1">
+                                      LOANS
+
+                                      </v-tab>
+                                   <v-divider vertical></v-divider>
+                                      <v-tab href="#tab-2">
+                                        CC
+                                      </v-tab>
+                                      <v-divider vertical></v-divider>
+                                      <v-tab href="#tab-3">
+                                      Insurance
+                                      </v-tab>
+                                  
+                                      <v-tab-item
+                                        v-for="i in 3"
+                                        :key="i"
+                                        :value="'tab-' + i"
+                                      >
+                                      </v-tab-item>
+                                    </v-tabs>
                   <v-tooltip right>
                   </v-tooltip>
                 </v-toolbar>
@@ -94,31 +119,29 @@
                      <v-container id="dropdown-example" grid-list-xl>
                       <v-layout row wrap>
                         <v-flex xs12 sm4>
-                          <h2><b>Type
-                          <v-overflow-btn
+                            <font color="white"><b>Type</b></font> 
+                          <v-overflow-btn class="white"
                             :items="dropdown_font"
-                            label="Personal Loan"
-                          
+                            label="loan type"
                             target="#dropdown-example"
                           ></v-overflow-btn>
                           </h2>
-                          <h2><b>Tenure</b>
-                            <v-text-field color="white"prepend-icon="calender_today" name="" label="No. of months selection" type="text"></v-text-field>
+                          <font color="white"><b>Tenure</b></font> 
+                            <v-text-field class="white" prepend-icon="calender_today" name="" label="No. of months selection" type="text"></v-text-field>
                         </h2>
                         </v-flex>
                             </v-layout>
                             </v-container>
                                               
-                        <v-flex xs12>
-                          <h2><b>Interest %</b></h2>
+                        <v-flex xs12><font color="white"><b>Interest %</b></font> 
                           
-                          <v-slider
+                          <v-slider track-color="#00E676"thumb-color="#00E676"color="#00E676"
                             v-model="slider"
                             thumb-label="always"
                             value="37"
                           ></v-slider>
                         </v-flex>
-                        
+                        </v-form>
                   </v-form>
                   
                 </v-card-text>
@@ -134,11 +157,21 @@
   </v-app>
 </div>
 </body>
+<script>
+  export default {
+    data: () => ({
+      dropdown_font: ['Student Loan', 'Personal Loan', 'Home Loan', 'Vehicle Loan'],
+
+ })
+  }
+</script>
+
 <script src="SCRIPTS/framework/vue.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
 <script src="SCRIPTS/scripts.js"></script>
+
 
 </html>
 
