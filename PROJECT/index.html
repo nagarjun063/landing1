@@ -78,15 +78,65 @@
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                   </v-toolbar-items>
                                 </v-toolbar>
-                                
-                </v-content>
-                
-        </v-app>
-    
-
+            <v-container fluid fill-height color="rgb(15, 1, 35)">
+              <v-layout align-center justify-end>
+                <v-flex xs12 sm8 md4>
+                  <v-card color="rgb(15, 1, 35)"class="elevation-12" class="white--text">
+                    <v-toolbar dark color="rgb(15, 1, 35)">
+                      <v-toolbar-title><b>LOAN</b><t></t></v-toolbar-title><v-toolbar-title>CC </v-toolbar-title><v-toolbar-title>INSURANCE </v-toolbar-title>
+                  <v-spacer></v-spacer>
+                 
+                  <v-tooltip right>
+                  </v-tooltip>
+                </v-toolbar>
+                <v-card-text color="white">
+                  <v-form>
+                     <v-container id="dropdown-example" grid-list-xl>
+                      <v-layout row wrap>
+                        <v-flex xs12 sm4>
+                          <h2><b>Type
+                          <v-overflow-btn
+                            :items="dropdown_font"
+                            label="Personal Loan"
+                          
+                            target="#dropdown-example"
+                          ></v-overflow-btn>
+                          </h2>
+                          <h2><b>Tenure</b>
+                            <v-text-field color="white"prepend-icon="calender_today" name="" label="No. of months selection" type="text"></v-text-field>
+                        </h2>
+                        </v-flex>
+                            </v-layout>
+                            </v-container>
+                                              
+                        <v-flex xs12>
+                          <h2><b>Interest %</b></h2>
+                          
+                          <v-slider
+                            v-model="slider"
+                            thumb-label="always"
+                            value="37"
+                          ></v-slider>
+                        </v-flex>
+                        
+                  </v-form>
+                  
+                </v-card-text>
+                <v-card-actions>
+                  <v-spacer></v-spacer>
+                  <v-btn large block color="#00E676" >Find my fit</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-content>
+  </v-app>
 </div>
 </body>
 <script src="SCRIPTS/framework/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
 <script src="SCRIPTS/scripts.js"></script>
 
