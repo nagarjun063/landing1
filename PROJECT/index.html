@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>what are you looking for</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+<div id="simpleApp">
+        <v-app>
+                <v-content>
+                                <v-toolbar
+                                  color="rgb(15, 1, 35)"
+                                  dark
+                                  ma-30 pa-20
+                                >
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <v-toolbar-title class="green--text">RAINBOW</v-toolbar-title>
+                                  <v-spacer></v-spacer>
+                                  <v-toolbar-items class="hidden-sm-and-down">
+                                      <v-tabs
+                                      color="rgb(15, 1, 35)"
+                                      dark
+                                      icons-and-text
+                                    >
+                                      <v-tabs-slider color="green"></v-tabs-slider>
+                                  
+                                      <v-tab href="#tab-1">
+                                      LOANS
+                                        
+                                      </v-tab>
+                                  
+                                      <v-tab href="#tab-2">
+                                        CC
+                                        
+                                      </v-tab>
+                                  
+                                      <v-tab href="#tab-3">
+                                        other products
+                                      </v-tab>
+                                  
+                                      <v-tab-item
+                                        v-for="i in 3"
+                                        :key="i"
+                                        :value="'tab-' + i"
+                                      >
+                                      </v-tab-item>
+                                    </v-tabs>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <v-btn flat>
+                                    rainbow heroes
+                                    <v-badge top color="green">
+                                        <span slot="badge"></span>
+                                    </v-badge>
+                                    </v-btn>
+                                    <v-divider vertical></v-divider>
+                                            <v-btn flat icon color="white">
+                                                    <v-icon>search</v-icon>
+                                                  </v-btn>
+                                    <v-divider vertical></v-divider>
+                                    <v-btn flat>
+                                    </v-btn>
+                                    <v-divider vertical></v-divider>
+                                    <v-btn flat>
+                                    </v-btn>
+                                    <v-divider vertical></v-divider>
+                                    <v-btn color="green" size="sm">Sign in</v-btn>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  </v-toolbar-items>
+                                </v-toolbar>
+                </v-content>
+                
+        </v-app>
+    
+
+</div>
+</body>
+<script src="SCRIPTS/framework/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+<script src="SCRIPTS/scripts.js"></script>
+
+</html>
+
