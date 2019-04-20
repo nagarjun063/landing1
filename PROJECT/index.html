@@ -116,19 +116,28 @@
                 </v-toolbar>
                 <v-card-text color="white">
                   <v-form>
-                     <v-container id="dropdown-example" grid-list-xl>
+                     <v-container id="simpleApp" grid-list-xl>
                       <v-layout row wrap>
-                        <v-flex xs12 sm4>
-                            <font color="white"><b>Type</b></font> 
-                          <v-overflow-btn class="white"
+                        <v-flex xs12 sm6>
+                          <font color="white"><b>Type</b></font> 
+                        </v-flex>
+                        <v-flex xs12 sm6>
+                          <v-select
                             :items="dropdown_font"
-                            label="loan type"
-                            target="#dropdown-example"
-                          ></v-overflow-btn>
-                          </h2>
+                            label="Personal loan"
+                            solo
+
+                          ></v-select>
+                        </v-flex>
+                        <v-flex xs12 sm6>
                           <font color="white"><b>Tenure</b></font> 
-                            <v-text-field class="white" prepend-icon="calender_today" name="" label="No. of months selection" type="text"></v-text-field>
-                        </h2>
+                        </v-flex>
+                        <v-flex xs12 sm6>                                              
+                          <v-text-field
+                          color: white
+                          label="No of months selection"
+                          solo
+                        ></v-text-field> 
                         </v-flex>
                             </v-layout>
                             </v-container>
@@ -157,14 +166,7 @@
   </v-app>
 </div>
 </body>
-<script>
-  export default {
-    data: () => ({
-      dropdown_font: ['Student Loan', 'Personal Loan', 'Home Loan', 'Vehicle Loan'],
 
- })
-  }
-</script>
 
 <script src="SCRIPTS/framework/vue.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
