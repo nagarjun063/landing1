@@ -163,6 +163,37 @@
             </v-flex>
           </v-layout>
         </v-container>
+        <v-footer
+        light
+        height="auto"
+      >
+        <v-card
+          class="flex"
+          flat
+          tile
+        >
+          <v-card-title class="white">
+            <strong class="title">SEARCH , COMPARE , APPLY TO  </p> products from various partners. </strong> 
+           
+    
+            <v-spacer> </v-spacer>
+    
+            <v-btn
+              v-for="icon in icons"
+              :key="icon"
+              class="mx-3"
+              light
+            
+            >
+              <v-icon size="34px">{{ icon }}</v-icon>
+            </v-btn>
+          </v-card-title>
+    
+          <v-card-actions class="grey darken-3 justify-center">
+            &copy;2018 — <strong>Vuetify</strong>
+          </v-card-actions>
+        </v-card>
+      </v-footer>
       </v-content>
   </v-app>
 </div>
