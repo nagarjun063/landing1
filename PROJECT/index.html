@@ -2,210 +2,225 @@
 <html>
 
 <head>
-    <title>landing1</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+<title>landing1</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
 <div id="simpleApp">
-        <v-app>
-                <v-content>
-                  
-                                <v-toolbar
-                                  color="rgb(15, 1, 35)"
-                                  dark
-                                  height="90px"
-                                >
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <v-toolbar-title class="green--text">RAINBOW</v-toolbar-title>
-                                  <v-spacer></v-spacer>
-                                  <v-toolbar-items class="hidden-sm-and-down">
-                                      <v-tabs
-                                      color="rgb(15, 1, 35)"
-                                      dark
-                                      icons-and-text
-                                    >
-                                    <v-tabs-slider color="green"></v-tabs-slider>
-                                      <v-tab href="#tab-1">
-                                      LOANS
-                                        
-                                      </v-tab>
-                                  
-                                      <v-tab href="#tab-2">
-                                        CC
-                                        
-                                      </v-tab>
-                                  
-                                      <v-tab href="#tab-3">
-                                        other products
-                                      </v-tab>
-                                  
-                                      <v-tab-item
-                                        v-for="i in 3"
-                                        :key="i"
-                                        :value="'tab-' + i"
-                                      >
-                                      </v-tab-item>
-                                    </v-tabs>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <v-btn flat>
-                                    rainbow heroes
-                                    <v-flex xs12 sm3 >
-                                    <v-badge top color="green">
-                                        <span xs12 sm8 md4 slot="badge"></span>
-                                        
-                                    </v-badge>
-                                  </v-flex>
-                                    </v-btn>
-                                    <v-divider vertical></v-divider>
-                                            <v-btn flat icon color="white">
-                                                    <v-icon>search</v-icon>
-                                                  </v-btn>
-                                    <v-divider vertical></v-divider>
-                                    <v-btn flat icon fill color="white">
-                                        <v-icon>crop_16_9</v-icon>
-                                    </v-btn>
-                                    <v-divider vertical></v-divider>
-                                    <v-btn flat icon fill color="white">
-                                        <v-icon>crop_16_9</v-icon>
-                                    </v-btn>
-                                    <v-divider vertical></v-divider>
-                                    <v-btn  xs color="green">Sign in</v-btn>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                  </v-toolbar-items>
-                                </v-toolbar>
-            <v-container fluid fill-height color="rgb(15, 1, 35)">
-              <v-layout align-center justify-end>
-                <v-flex xs12 sm8 md4>
-                  <v-card color="rgb(15, 1, 35)"class="elevation-12" class="white--text">
-                    <v-toolbar dark color="rgb(15, 1, 35)">
-                        <v-tabs
-                                      color="rgb(15, 1, 35)"
-                                      dark
-                                      icons-and-text
-                                    >
-                                    <v-tabs-slider color="green"></v-tabs-slider>
-                                      <v-tab href="#tab-1">
-                                      LOANS
-
-                                      </v-tab>
-                                   <v-divider vertical></v-divider>
-                                      <v-tab href="#tab-2">
-                                        CC
-                                      </v-tab>
-                                      <v-divider vertical></v-divider>
-                                      <v-tab href="#tab-3">
-                                      Insurance
-                                      </v-tab>
-                                  
-                                      <v-tab-item
-                                        v-for="i in 3"
-                                        :key="i"
-                                        :value="'tab-' + i"
-                                      >
-                                      </v-tab-item>
-                                    </v-tabs>
-                  <v-tooltip right>
-                  </v-tooltip>
-                </v-toolbar>
-                <v-card-text color="white">
-                  <v-form>
-                     <v-container id="simpleApp" grid-list-xl>
-                      <v-layout row wrap>
-                        <v-flex xs12 sm6>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="white"><b>Type</b></font> 
-                        </v-flex>
-                        <v-flex xs12 sm6>
-                          <v-select
-                            :items="dropdown_font"
-                            label="Personal loan"
-                            solo
-
-                          ></v-select>
-                        </v-flex>
-                        <v-flex xs12 sm6>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="white"><b>Tenure</b></font> 
-                        </v-flex>
-                        <v-flex xs12 sm6>                                              
-                          <v-text-field
-                          color: white
-                          label="No of months selection"
-                          solo
-                        ></v-text-field> 
-                        </v-flex>
-                            </v-layout>
-                            </v-container>
-                                              
-                        <v-flex xs12 sm6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="white"><b>Interest %</b></font> 
-                        </v-flex>
-                        <v-flex xs12>
-                          <v-slider track-color="white"thumb-color="black"color="white"
-                            v-model="slider"
-                            thumb-label="always"
-                            value="90"
-                          ></v-slider>
-                        </v-flex>
-                        </v-form>
-                  </v-form>
-                  
-                </v-card-text>
-                <v-card-actions>
-                  <v-spacer></v-spacer>
-                  <v-btn large block color="#00E676" >Find my fit</v-btn>
-                </v-card-actions>
+<v-app>
+<v-content>
+<v-toolbar
+color="rgb(15, 1, 35)"
+dark
+height="90px"
+>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<v-toolbar-title class="green--text">RAINBOW</v-toolbar-title>
+<v-spacer></v-spacer>
+<v-toolbar-items class="hidden-sm-and-down">
+<v-tabs
+color="rgb(15, 1, 35)"
+dark
+icons-and-text
+>
+<v-tabs-slider color="green"></v-tabs-slider>
+<v-tab href="#tab-1">
+LOANS
+</v-tab>
+<v-tab href="#tab-2">
+CC
+</v-tab>
+<v-tab href="#tab-3">
+other products
+</v-tab>
+<v-tab-item
+v-for="i in 3"
+:key="i"
+:value="'tab-' + i"
+>
+</v-tab-item>
+</v-tabs>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<v-btn flat>
+rainbow heroes
+<v-flex xs12 sm3 >
+<v-badge top color="green">
+<span xs6 sm8 md4 slot="badge"></span>
+</v-badge>
+</v-flex>
+</v-btn>
+<v-divider vertical></v-divider>
+<v-btn flat icon color="white">
+<v-icon>search</v-icon>
+</v-btn>
+<v-divider vertical></v-divider>
+<v-btn flat icon fill color="white">
+<v-icon>crop_16_9</v-icon>
+</v-btn>
+<v-divider vertical></v-divider>
+<v-btn flat icon fill color="white">
+<v-icon>crop_16_9</v-icon>
+</v-btn>
+<v-divider vertical></v-divider>
+<v-btn xs color="green">Sign in</v-btn>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</v-toolbar-items>
+</v-toolbar>
+<v-layout align-center justify-bottom pa-5 ma-5 >
+<v-flex xs6 sm6 mt5 >
+<v-card class="elevation-12" color="rgb(15, 1, 35)">
+<v-responsive :aspect-ratio="16/9">
+<v-card-text>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <pre></pre>
+  <div class="display-2 font-weight-bold">
+    <font color="white"><p class="text-xs-left">WHAT ARE YOU LOOKING
+      </p> FOR?</font>
+    </div>
+</v-card-text> 
+</v-responsive>
+</v-card>
+</v-flex>
+<v-divider vertical></v-divider>
+<v-flex xs6 sm6 mt5>
+<v-card class="elevation-12" color="rgb(15, 1, 35)">
+    <v-responsive :aspect-ratio="16/9">
+          <v-toolbar dark color="rgb(15, 1, 35)"
+          height=70px>
+              <v-tabs
+              color="rgb(15, 1, 35)"
+              dark
+              icons-and-text
+              >
+              <v-tabs-slider color="green"></v-tabs-slider>
+              <v-tab href="#tab-1">
+              LOANS
+              </v-tab>
+              <v-divider vertical></v-divider>
+              <v-tab href="#tab-2">
+              CC
+              </v-tab>
+              <v-divider vertical></v-divider>
+              <v-tab href="#tab-3">
+              Insurance
+              </v-tab>
+              <v-tab-item
+              v-for="i in 3"
+              :key="i"
+              :value="'tab-' + i"
+              >
+              </v-tab-item>
+              </v-tabs>
+              <v-tooltip right>
+              </v-tooltip>
+              </v-toolbar>
+              <v-divider></v-divider>
+              <v-card-text color="white">
+              <v-form>
+              <v-container id="simpleApp" grid-list-xl>
+              <v-layout row wrap>
+              <v-flex xs12 sm6>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="white"><b>Type</b></font> 
+              </v-flex>
+              <v-flex xs12 sm6>
+              <v-select
+              :items="dropdown_font"
+              label="Personal loan"
+              solo
+              ></v-select>
+              </v-flex>
+              <v-flex xs12 sm6>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="white"><b>Tenure</b></font> 
+              </v-flex>
+              <v-flex xs12 sm6> 
+              <v-text-field
+              color: white
+              label="No of months selection"
+              solo
+              ></v-text-field> 
+              </v-flex>
+              </v-layout>
+              </v-container>
+              <v-flex xs12 sm6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="white"><b>Interest %</b></font> 
+              </v-flex>
+              <v-flex xs12>
+              <v-slider track-color="white"thumb-color="black"color="white"
+              v-model="slider"
+              thumb-label="always"
+              value="90"
+              ></v-slider>
+              </v-flex>
+              </v-form>
+              </v-form>
+              </v-card-text>
+              <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn large block color="#00E676" >Find my fit</v-btn>
+              </v-card-actions>
               </v-card>
-            </v-flex>
-          </v-layout>
-        </v-container>
-        <v-footer
+      </v-responsive>
+    </v-card>
+      </v-flex>
+
+</v-flex>
+</v-layout>
+<v-footer
+light
+height="auto"
+>
+<v-card
+  class="flex"
+  flat
+  tile
+>
+<v-card class="white">
+    <div class="display-2 font-weight"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEARCH , COMPARE , APPLY TO  
+      
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<v-btn
+        v-for="icon in icons"
+        :key="icon"
+        class="mx-3"
         light
-        height="auto"
+      
       >
-        <v-card
-          class="flex"
-          flat
-          tile
-        >
-          <v-card-title class="white">
-            <strong class="title">SEARCH , COMPARE , APPLY TO  </p> products from various partners. </strong> 
-           
+      </v-btn></div>
+    </p>  <div class="display-1 font-weight">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;products from various partners.
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <v-btn
+      v-for="icon in icons"
+      :key="icon"
+      class="mx-3"
+      light
     
-            <v-spacer> </v-spacer>
+    >
+    </v-btn>
+  </div>
+
     
-            <v-btn
-              v-for="icon in icons"
-              :key="icon"
-              class="mx-3"
-              light
-            
-            >
-              <v-icon size="34px">{{ icon }}</v-icon>
-            </v-btn>
-          </v-card-title>
-    
-          <v-card-actions class="grey darken-3 justify-center">
-            &copy;2018 — <strong>Vuetify</strong>
-          </v-card-actions>
-        </v-card>
-      </v-footer>
-      </v-content>
-  </v-app>
+
+   
+</v-card>
+</v-footer>
+</v-content>
+</v-app>
 </div>
 </body>
-
 
 <script src="SCRIPTS/framework/vue.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
 <script src="SCRIPTS/scripts.js"></script>
-
 
 </html>
 
